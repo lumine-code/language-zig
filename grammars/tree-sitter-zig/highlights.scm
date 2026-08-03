@@ -277,7 +277,7 @@
 "=>" @punctuation.separator.switch-case.zig
 "->" @punctuation.separator.return-type.zig
 
-(payload "|" @punctuation.bracket)
+(payload "|" @punctuation.definition.payload.zig)
 
 ; Comments
 
