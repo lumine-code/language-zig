@@ -1,7 +1,7 @@
 {
   "name": "Zig",
   "scopeName": "source.zig",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-zig",
   "injectionRegex": "^(zig)$",
   "fileTypes": ["zig", "zon"],
