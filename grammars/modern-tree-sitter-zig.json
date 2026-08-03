@@ -1,0 +1,21 @@
+{
+  "name": "Zig",
+  "scopeName": "source.zig",
+  "type": "modern-tree-sitter",
+  "parser": "tree-sitter-zig",
+  "injectionRegex": "^(zig)$",
+  "fileTypes": ["zig", "zon"],
+  "comments": {
+    "start": "/ "
+  },
+  "treeSitter": {
+    // Pin a tag or a full SHA, never a branch. Verify the ref is on the main
+    // line before trusting it — `gh api repos/OWNER/REPO/compare/<ref>...HEAD`
+    // reporting `diverged` or a nonzero `behind` means it is not.
+    "parserSource": "github:tree-sitter-grammars/tree-sitter-zig#v1.1.2",
+    "wasmBuildTool": "tree-sitter-cli#v0.26.11",
+    "grammar": "tree-sitter-zig/tree-sitter-zig.wasm",
+    "highlightsQuery": "tree-sitter-zig/highlights.scm",
+    "foldsQuery": "tree-sitter-zig/folds.scm"
+  }
+}
