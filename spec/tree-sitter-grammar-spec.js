@@ -9,7 +9,7 @@ const path = require("path");
 
 describe("Zig Tree-sitter grammar", () => {
   beforeEach(async () => {
-    await atom.packages.activatePackage("language-zig");
+    await lumine.packages.activatePackage("language-zig");
   });
 
   it("tokenizes the fixture", async () => {
