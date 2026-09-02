@@ -3,7 +3,7 @@
   "scopeName": "source.zig",
   "type": "tree-sitter",
   "parser": "tree-sitter-zig",
-  "injectionRegex": "^(zig)$",
+  "injectionNames": ["zig"],
   "fileTypes": ["zig", "zon"],
   "comments": {
     "start": "/ "
@@ -14,8 +14,8 @@
     // reporting `diverged` or a nonzero `behind` means it is not.
     "parserSource": "github:tree-sitter-grammars/tree-sitter-zig#v1.1.2",
     "wasmBuildTool": "tree-sitter-cli#v0.26.13",
-    "grammar": "tree-sitter-zig/tree-sitter-zig.wasm",
-    "highlightsQuery": "tree-sitter-zig/highlights.scm",
-    "foldsQuery": "tree-sitter-zig/folds.scm"
+    "grammar": "zig.wasm",
+    "highlightsQuery": "zig-highlights.scm",
+    "foldsQuery": "zig-folds.scm"
   }
 }
