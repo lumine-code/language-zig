@@ -68,11 +68,11 @@
 (container_field
   name: (identifier) @variable.other.member.zig)
 
-(initializer_list
-  (assignment_expression
-      left: (field_expression
-              .
-              member: (identifier) @variable.other.member.zig)))
+(field_expression
+  .
+  member: (identifier) @variable.other.member.zig
+  (#is? test.typeAt "parent.parent assignment_expression")
+  (#is? test.typeAt "parent.parent.parent initializer_list"))
 
 ; Functions
 
@@ -281,7 +281,8 @@
 
 ; Comments
 
-(comment) @comment.line.zig @_IGNORE_.spell
+((comment) @comment.line.zig @_IGNORE_.spell
+  (#set! adjust.endBeforeFirstMatchOf "\\r?$"))
 
 ((comment) @comment.block.documentation.zig
-  )
+  (#set! adjust.endBeforeFirstMatchOf "\\r?$"))
