@@ -18,12 +18,12 @@ describe("Zig highlight query locality", () => {
     await editor.languageMode.ready;
   }
 
-  function tileCaptures() {
-    const layer = editor.languageMode.rootLanguageLayer;
-    return layer.queries.highlightsQuery.captures(layer.tree.rootNode, {
+  async function tileCaptures() {
+    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
       startPosition: new Point(2998, 0),
       endPosition: new Point(3004, 0),
     });
+    return groups.find(({ grammar }) => grammar === editor.getGrammar())?.captures ?? [];
   }
 
   it("keeps initializer members local inside a 6000-row initializer", async () => {
@@ -42,7 +42,7 @@ describe("Zig highlight query locality", () => {
     for (let i = 0; i < 6000; i++) lines.push(`  .field_${i} = value_${i},`);
     lines.push("};");
     await setUp(lines.join("\r\n"));
-    expect(editor.languageMode.rootLanguageLayer.tree.rootNode.hasError).toBe(false);
-    expect(tileCaptures().length).toBeLessThanOrEqual(96);
+    expect((await editor.getSyntaxDiagnostics()).hasError).toBe(false);
+    expect((await tileCaptures()).length).toBeLessThanOrEqual(96);
   });
 });
