@@ -16,6 +16,7 @@
     "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "zig.wasm",
     "highlightsQuery": "zig-highlights.scm",
-    "foldsQuery": "zig-folds.scm"
+    "foldsQuery": "zig-folds.scm",
+    "injectionsQuery": "zig-injections.scm"
   }
 }
