@@ -1,0 +1,48 @@
+{
+  "source.zig": {
+    "text": "const Widget = struct { count: usize, fn greet() void {} };\nconst Colour = enum { red, blue };\nconst Error = error { Failed };\nvar count: usize = 1;\nfn scale(value: usize) usize { return value * 2; }\ntest \"works\" { _ = scale(count); }\n// fn Phantom() void {}\n",
+    "symbols": [
+      {
+        "name": "Widget",
+        "tag": "struct"
+      },
+      {
+        "name": "greet",
+        "tag": "function"
+      },
+      {
+        "name": "Colour",
+        "tag": "enum"
+      },
+      {
+        "name": "Error",
+        "tag": "type"
+      },
+      {
+        "name": "count",
+        "tag": "variable"
+      },
+      {
+        "name": "scale",
+        "tag": "function"
+      },
+      {
+        "name": "works",
+        "tag": "test"
+      },
+      {
+        "name": "red",
+        "tag": "constant"
+      },
+      {
+        "name": "blue",
+        "tag": "constant"
+      },
+      {
+        "name": "Failed",
+        "tag": "constant"
+      }
+    ],
+    "absent": ["Phantom"]
+  }
+}

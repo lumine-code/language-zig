@@ -5,6 +5,7 @@ Zig language support.
 ## Features
 
 - **Grammars**: provides Tree-sitter grammars, built from [tree-sitter-zig](https://github.com/tree-sitter-grammars/tree-sitter-zig).
+- **Symbols**: functions, named containers, fields, constants and named tests.
 - **Syntax highlighting**: full tree-sitter grammar coverage for Zig files.
 - **Folding**: folds blocks from the parse tree rather than by indentation.
 
