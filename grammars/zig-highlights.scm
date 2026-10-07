@@ -278,6 +278,7 @@
 "->" @punctuation.separator.return-type.zig
 
 (payload "|" @punctuation.definition.payload.zig)
+(payload (identifier) @variable.parameter.zig)
 
 ; Comments
 
