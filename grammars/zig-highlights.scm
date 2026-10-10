@@ -13,7 +13,7 @@
   type: (identifier) @support.type.zig)
 
 ((identifier) @support.type.zig
-  )
+  (#match? @support.type.zig "^[A-Z_][a-zA-Z0-9_]*"))
 
 (variable_declaration
   (identifier) @support.type.zig
@@ -33,7 +33,7 @@
 ; Constants
 
 ((identifier) @constant.other.zig
-  )
+  (#match? @constant.other.zig "^[A-Z][A-Z_0-9]+$"))
 
 [
   "null"
