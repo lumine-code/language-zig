@@ -1,0 +1,16 @@
+{
+  "title": "language-zig",
+  "description": "Zig syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "72a5bcc800ff1ffdfc308a55b07ef4cae4d47a3b",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "Zig syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 360
+    }
+  ]
+}

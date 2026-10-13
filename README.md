@@ -9,6 +9,8 @@ Zig language support.
 - **Syntax highlighting**: full tree-sitter grammar coverage for Zig files.
 - **Folding**: folds blocks from the parse tree rather than by indentation.
 
+![Zig syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-zig` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-zig`.
