@@ -1,16 +1,61 @@
 {
   "title": "language-zig",
-  "description": "Zig syntax highlighting in the editor.",
-  "recordedOn": "2026-10-13",
-  "sourceRevision": "72a5bcc800ff1ffdfc308a55b07ef4cae4d47a3b",
+  "description": "Zig syntax highlighting at the default editor font size.",
+  "recordedOn": "2026-10-14",
+  "sourceRevision": "83f3a08fd2edec89156c6e8c10a9d2d685c6cb73",
+  "themeSourceRevision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
   "mode": "normal",
   "fontSettings": "default",
+  "scenario": "demo.js",
+  "recipeHash": "d945dcb3f7b6a509693cf7b1f0d5d5cb7cb006693fa81189829acadba5f0c17d",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "44.7.0",
+    "chrome": "152.0.7977.130",
+    "devicePixelRatio": 1,
+    "locale": "en-GB",
+    "fontFamily": "Fira Code, Menlo, DejaVu Sans Mono, Consolas, monospace",
+    "fontSize": 14,
+    "themes": ["one-day-syntax", "one-day-ui"]
+  },
+  "viewport": { "width": 1100, "height": 360 },
+  "cornerRadius": 10,
+  "sources": {
+    "editor": {
+      "revision": "0362a9fac7d6e153a768c0381800d6f3eb06647a",
+      "dirty": true,
+      "workingTreeHash": "c4defaf459f08a90cb1517ff7c04fdeeae7e7de98030f65415ee09a97572e9a7"
+    },
+    "package": {
+      "revision": "83f3a08fd2edec89156c6e8c10a9d2d685c6cb73",
+      "dirty": true,
+      "workingTreeHash": "3a764a21d31cf26690259e268ad705a18d634e6132d18b7bc09cb5e44636bbc4"
+    },
+    "language-zig": {
+      "revision": "83f3a08fd2edec89156c6e8c10a9d2d685c6cb73",
+      "dirty": true,
+      "workingTreeHash": "3a764a21d31cf26690259e268ad705a18d634e6132d18b7bc09cb5e44636bbc4"
+    },
+    "one-theme": {
+      "revision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
+      "dirty": true,
+      "workingTreeHash": "50ec2f83a6347dd8113870992ec4eb2be4014f3d9e12213c2f51b543f1eca793"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "example.zig",
+      "sha256": "a10d04175c52842ef00b569d64ae7600878b969a4a1237af8d789f3527d2d773"
+    }
+  ],
   "images": [
     {
       "file": "demo.png",
       "label": "Zig syntax highlighting at the default editor font size.",
       "width": 1100,
-      "height": 360
+      "height": 360,
+      "sha256": "267e60b5c4dccf2367082514df1806aeba4ace77f9d957128612bdc6991d603e"
     }
   ]
 }
