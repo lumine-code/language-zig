@@ -285,5 +285,6 @@
 ((comment) @comment.line.zig @_IGNORE_.spell
   (#set! adjust.endBeforeFirstMatchOf "\\r?$"))
 
-((comment) @comment.block.documentation.zig
+((comment) @comment.line.documentation.zig
+  (#match? @comment.line.documentation.zig "^//[!/]")
   (#set! adjust.endBeforeFirstMatchOf "\\r?$"))
