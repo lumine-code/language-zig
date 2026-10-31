@@ -17,6 +17,7 @@
     "grammar": "zig.wasm",
     "tagsQuery": "zig-tags.scm",
     "highlightsQuery": "zig-highlights.scm",
+    "indentsQuery": "zig-indents.scm",
     "foldsQuery": "zig-folds.scm",
     "injectionsQuery": "zig-injections.scm"
   }
