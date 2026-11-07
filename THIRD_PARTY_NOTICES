@@ -2,6 +2,9 @@
 Source: https://github.com/tree-sitter-grammars/tree-sitter-zig
 Revision: v1.1.2
 
+Parser source: github:tree-sitter-grammars/tree-sitter-zig#v1.1.2
+Resolved commit: b670c8df85a1568f498aa5c8cae42f51a90473c0
+
 Original file: LICENSE
 
 The MIT License (MIT)
